@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  font-family: 'Cutive', serif;
+  height: 100vh;
+  color: aliceblue;
+}
+
+.particles{
+  z-index: -1000;
+  background: #333FFF;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
