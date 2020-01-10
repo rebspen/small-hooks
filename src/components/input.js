@@ -58,14 +58,14 @@ const Input = props => {
     <div className = "main">
     <h1>Translate Mate</h1>
     <select className= "select-css" onChange={handleLangChange}>
-    <option>Choose your language</option>
+    <option>Choose</option>
     <option value="australian">Australian</option>
     <option value="minion">Minion</option>
     <option value="pirate">Pirate</option>
     <option value="cockney">Cockney</option>
     <option value="yoda">Yoda</option>
     </select>
-    <input placeholder = "Write here..." type="text" name="phrase" onChange={handleChange}></input>
+    <textarea placeholder = "Write here..." type="text" name="phrase" onChange={handleChange}></textarea>
     <button onClick={getTranslate}>translate</button>
     {loading && <TopBarProgress />}
     {output && (<h2>"{output.contents.translated}"</h2>)}
